@@ -1,5 +1,7 @@
 package com.lightsfive.konohabank.bean;
 
+import java.sql.Date;
+
 public class Customer {
 
 	private int customerId;
@@ -21,6 +23,8 @@ public class Customer {
 	private String city;
 
 	private char customerStatus;
+	
+	private Date updatedDate;
 
 	public int getCustomerId() {
 		return customerId;
@@ -101,5 +105,15 @@ public class Customer {
 	public void setCustomerStatus(char customerStatus) {
 		this.customerStatus = customerStatus;
 	}
+
+	public Date getUpdatedDate() {
+		return updatedDate;
+	}
+
+	public void setUpdatedDate(Date updatedDate) {
+		this.updatedDate = updatedDate;
+	}
+	
+	
 
 }
