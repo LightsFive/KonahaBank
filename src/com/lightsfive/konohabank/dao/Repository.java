@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.Map;
 import java.util.Set;
 
@@ -44,7 +45,9 @@ public class Repository {
 			else if (parameters.get(key) instanceof Date)
 				pt.setDate(key, (Date) parameters.get(key));
 			else if (parameters.get(key) instanceof Character)
-				pt.setString(key, (String) parameters.get(key));
+				pt.setString(key, String.valueOf(parameters.get(key)));
+			else if (parameters.get(key) instanceof Timestamp)
+				pt.setTimestamp(key, (Timestamp) parameters.get(key));
 			else
 				throw new IllegalArgumentException("Invalid Parameter Type");
 		}

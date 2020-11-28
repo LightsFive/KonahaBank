@@ -1,12 +1,13 @@
 package com.lightsfive.konohabank.bean;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 public class Customer {
 
-	private int customerId;
+	private long customerId;
 
-	private int customerSSNId;
+	private long customerSSNId;
 
 	private String customerName;
 
@@ -24,21 +25,21 @@ public class Customer {
 
 	private char customerStatus;
 	
-	private Date updatedDate;
+	private Timestamp updatedDateTime;
 
-	public int getCustomerId() {
+	public long getCustomerId() {
 		return customerId;
 	}
 
-	public void setCustomerId(int customerId) {
+	public void setCustomerId(long customerId) {
 		this.customerId = customerId;
 	}
 
-	public int getCustomerSSNId() {
+	public long getCustomerSSNId() {
 		return customerSSNId;
 	}
 
-	public void setCustomerSSNId(int customerSSNId) {
+	public void setCustomerSSNId(long customerSSNId) {
 		this.customerSSNId = customerSSNId;
 	}
 
@@ -106,12 +107,12 @@ public class Customer {
 		this.customerStatus = customerStatus;
 	}
 
-	public Date getUpdatedDate() {
-		return updatedDate;
+	public Timestamp getUpdatedDate() {
+		return updatedDateTime;
 	}
 
-	public void setUpdatedDate(Date updatedDate) {
-		this.updatedDate = updatedDate;
+	public void setUpdatedDate(Timestamp updatedDateTime) {
+		this.updatedDateTime = updatedDateTime;
 	}
 	
 	
