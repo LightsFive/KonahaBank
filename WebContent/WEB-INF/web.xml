@@ -2,11 +2,22 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>KonahaBank</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-</web-app>
+  
+  <!-- servlet configuration need to be written -->
+<!--   <servlet>
+    <description></description>
+    <display-name>KonahaBankController</display-name>
+    <servlet-name>KonahaBankController</servlet-name>
+    <servlet-class>com.lightsfive.konohabank.controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>KonahaBankController</servlet-name>
+    <url-pattern>/KonahaBankController</url-pattern>
+  </servlet-mapping>
+ --></web-app>
