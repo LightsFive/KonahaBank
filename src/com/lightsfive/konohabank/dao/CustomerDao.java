@@ -6,12 +6,11 @@ import java.util.Map;
 
 import com.lightsfive.konohabank.bean.Customer;
 
-public class CustomerDao {
+public class CustomerDao extends Repository {
 	
-	private static final String ADD_CUSTOMER = "insert into CUSTOMER values(?,?,?,?,?,?,?,?,?,?,?)";
+	private static final String ADD_CUSTOMER = "insert into knb_customer values(?,?,?,?,?,?,?,?,?,?,?)";
 	
 	public boolean addCustomer(Customer customer) throws SQLException {
-		Repository repository = new Repository();
 		Map<Integer, Object> parameters = new HashMap<>();
 		parameters.put(1, customer.getCustomerId());
 		parameters.put(2, customer.getCustomerSSNId());
@@ -24,7 +23,7 @@ public class CustomerDao {
 		parameters.put(9, customer.getMobileNumber());
 		parameters.put(10, customer.getCustomerStatus());
 		parameters.put(11, customer.getUpdatedDate());
-		return repository.add(ADD_CUSTOMER, parameters);
+		return add(ADD_CUSTOMER, parameters);
 	}
 
 }
