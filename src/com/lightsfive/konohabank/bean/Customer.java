@@ -26,6 +26,22 @@ public class Customer {
 	private char customerStatus;
 	
 	private Timestamp updatedDateTime;
+	
+	
+
+	public Customer() {
+	}
+
+	public Customer(String customerName, int age, String emailId, long mobileNumber, String address, String state,
+			String city) {
+		this.customerName = customerName;
+		this.age = age;
+		this.emailId = emailId;
+		this.mobileNumber = mobileNumber;
+		this.address = address;
+		this.state = state;
+		this.city = city;
+	}
 
 	public long getCustomerId() {
 		return customerId;

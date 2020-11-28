@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1> welcome to login.jsp</h1>
-<form name="loginform" action="KonahaBankController" method="post">
+<form name="loginform" action="KonahaBankController">
 <table>
 <tr>
 <td> UserName: </td><td><input type ="text"/></td></tr>
@@ -23,5 +23,7 @@
 </table>
 
 </form>
+<br><br>
+<a href="createcustomer.jsp">New User</a>
 </body>
 </html>

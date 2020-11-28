@@ -48,8 +48,10 @@ public class Repository {
 				pt.setString(key, String.valueOf(parameters.get(key)));
 			else if (parameters.get(key) instanceof Timestamp)
 				pt.setTimestamp(key, (Timestamp) parameters.get(key));
-			else
+			else {
+				System.out.println("Invalid Parameter Type:" + parameters.get(key));
 				throw new IllegalArgumentException("Invalid Parameter Type");
+			}
 		}
 	}
 

@@ -8,16 +8,4 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
-  <!-- servlet configuration need to be written -->
-<!--   <servlet>
-    <description></description>
-    <display-name>KonahaBankController</display-name>
-    <servlet-name>KonahaBankController</servlet-name>
-    <servlet-class>com.lightsfive.konohabank.controller</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>KonahaBankController</servlet-name>
-    <url-pattern>/KonahaBankController</url-pattern>
-  </servlet-mapping>
- --></web-app>
+</web-app>
